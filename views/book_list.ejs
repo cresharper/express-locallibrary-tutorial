@@ -1,0 +1,18 @@
+<% include includes/head %>
+<body>
+	<% include includes/menu %>
+	<div class="col-sm-10">
+		<h1><%= title %></h1>
+		<ul>
+		<% for (var i = 0; i < book_list.length; i++) { -%>
+			<li>
+            	<a href='books/<%= book_list[i]._id %>'>
+            		<%= book_list[i].title %>
+            	</a>
+        	</li>
+		<% } -%>
+	</ul>
+	</div>
+
+</body>
+</html>

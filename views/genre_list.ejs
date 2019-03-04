@@ -1,0 +1,18 @@
+<% include includes/head %>
+<body>
+	<% include includes/menu %>
+	<div class="col-sm-10">
+		<h1><%= title %></h1>
+		<ul>
+		<% for (var i = 0; i < genre_list.length; i++) { -%>
+			<li>
+            	<a href='genres/<%= genere_list[i] %>'>
+            		<%= genre_list[i].name %>
+            	</a>
+        	</li>
+		<% } -%>
+	</ul>
+	</div>
+
+</body>
+</html>
